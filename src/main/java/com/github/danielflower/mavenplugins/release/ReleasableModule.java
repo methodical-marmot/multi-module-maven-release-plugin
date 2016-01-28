@@ -17,7 +17,7 @@ public class ReleasableModule {
         this.version = version;
         this.equivalentVersion = equivalentVersion;
         this.relativePathToModule = relativePathToModule;
-        this.tagName = project.getArtifactId() + "-" + version.releaseVersion();
+        this.tagName = project.getGroupId() + "." + project.getArtifactId() + "-" + version.releaseVersion();
     }
 
     public String getTagName() {
